@@ -1,0 +1,67 @@
+
+
+
+@media only screen and (min-width: 1020px){
+	
+	.tourPhotos{
+			float:center;
+			width: 40vw;
+			height: 25vw;
+			margin:auto;
+			padding:auto;
+			padding-left:10vw;
+			padding-right:10vw;
+	}
+	p{
+		font-size: 2vw;
+	}
+
+	.description{
+		
+		font-size: 1vw;
+	}
+
+	.title{
+		font-weight: bold;
+		font-size: 1.5vw;
+	}
+
+	.subtitle{
+		font-style: italic;
+		font-size: 1vw;
+	}
+
+
+}
+
+@media only screen and (max-width: 1020px) {
+	
+	.tourPhotos{
+			float:center;
+			width: 40vw;
+			height: 20vw;
+			margin:auto;
+			padding:auto;
+			padding-left:30vw;
+			padding-right:30vw;
+	}
+	p{
+		font-size: 3vw;
+	}
+
+	.description{
+		
+		font-size: 3vw;
+	}
+
+	.title{
+		font-weight: bold;
+		font-size: 4vw;
+	}
+
+	.subtitle{
+		font-style: italic;
+		font-size: 2.5vw;
+	}
+
+}

@@ -1,0 +1,31 @@
+
+@media only screen and (min-width: 1020px) {
+	/* For PCs: */
+  
+
+	footer {
+	  background-color: #FEDF00;
+	  padding: 10px;
+	  text-align: center;
+	  color: black;
+	  width:99vw;
+	  margin-left:0;
+	  font-size: 1.5vw;
+	}
+}
+
+
+
+@media only screen and (max-width: 1020px){
+	/* For mobile phones: */
+
+	footer {
+	  background-color: #FEDF00;
+	  padding: 10px;
+	  text-align: center;
+	  color: black;
+	  width:150vw;
+	  margin-left:-20vw;
+	  font-size: 3vw;
+	}
+}

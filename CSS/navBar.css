@@ -1,0 +1,156 @@
+
+
+h2 
+{ 
+	position: absolute; /* To place the text on the image*/
+	top: 1vw; /* The exact location of the text from the top of the image*/
+	left: 0 px; /* Other beautification stuff */
+	 
+	
+}
+.navigation ul {
+	list-style-type: none;
+	margin-top:0.5vw;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FEDF00;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: black;
+  font-family: Agency FB, serif;
+  font: bold ; 
+  text-align: center;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:2vw;
+  padding-bottom:0.5vw;
+  text-decoration: none;
+ }
+
+.navigation li a:hover {
+  background-color: #FFFF99;
+}
+
+.navigation li {
+border-right: 0.25vw solid black;
+}
+.navigation li:last-child {
+ border: none;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown-content {
+  left:0;
+  display: none;
+  position: absolute;
+  background-color: #FFFF99;
+  z-index: 1;
+}
+
+.dropdown-content a {
+ 
+  display: inline-block;
+  color: black;
+  font-family: Agency FB, serif;
+  font: bold ; 
+  text-align: left;
+  padding-left:0.5vw;
+  padding-right:0.5vw;
+  padding-top:1vw;
+  padding-bottom:1vw;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #FEDF00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+
+
+@media only screen and (min-width: 1020px) {
+	/* For PCs: */
+	
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  float:left;
+	}
+	
+	.navigation ul {
+		top:1vw; 
+		width: 58.33vw;
+	}
+	
+	.navigation li a {
+	  font-size:2.3vw;
+	}
+	
+	.navigation li {
+		border-right: 0.25vw solid black;
+	}
+	.dropdown-content{
+		top:6.25vw;
+	}
+	.dropdown-content a {
+		font-size:2.5vw;
+	}
+	
+	.dropdown:hover .dropdown-content{
+		display:inline-block;
+	}
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+	/* For mobiles: */
+  
+  [class*="col-"] {
+    width: 96vw;
+  }
+	.sticky {
+	  position: absolute;
+	  top: 0;
+	  float:left;
+	}
+	
+	.navigation{
+		width:96vw;
+	}
+ 	.navigation li {
+	  width:96vw;
+	  
+	}
+
+  	.navigation li a {
+	  font-size:5vw;
+	  
+	}
+	
+	.navigation li {
+		border-right:none;
+		border-bottom:  0.25vw solid black;
+	}
+	
+	.dropdown:hover .dropdown-content {
+		display:none;
+	}
+	
+}

@@ -1,0 +1,276 @@
+/* For desktop: */
+.col-1 {width: 8.33vw;}
+.col-2 {width: 16.66vw;}
+.col-3 {width: 25vw;}
+.col-4 {width: 33.33vw;}
+.col-5 {width: 41.66vw;}
+.col-6 {width: 50vw;}
+.col-7 {width: 58.33vw;}
+.col-8 {width: 66.66vw;}
+.col-9 {width: 75vw;}
+.col-10 {width: 83.33vw;}
+.col-11 {width: 91.66vw;}
+.col-12 {width: 100vw;}
+
+
+
+
+
+img {
+	vertical-align: middle;
+	width:100vw;
+	height:150vw;
+}
+
+ body, html,form{
+  font-family: Cambria, sans-serif;
+
+}
+
+
+
+
+/* Add styles to the form container */
+.container {
+  top:0;
+  position: absolute;
+  border-color:#FEDF00;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email]{
+  display: inline-block;
+  float:right;
+  border: solid;
+  font-color:black;
+  border-color:#FEDF00;
+  background:  white;
+  text-align:middle;
+
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+  background-color: #FFFF99;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.reg_btn {
+  background-color: white;
+  border: solid;
+  border-color: #FEDF00;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.reg_btn:hover {
+  background-color: #FFFF99;
+}
+
+.reg_hr{
+	 display: block; 
+	 height: 1vw;
+	 border: 0;
+	 margin: 1em 0;
+	 padding: 0;
+}
+
+.browse_btn{
+  display: inline-block;
+  float:right;
+  background-color: white;
+  //border: solid;
+  //border-width:0.2vw;
+  //border-color: #FEDF00;
+  color: black;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.submit_btn{
+  display: inline-block;
+  float:center;
+  background: white;
+  border: solid;
+  border-color: #FEDF00;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.submit_btn:hover {
+  background-color: #FFFF99;
+}
+
+.form_head{
+	font-weight: bold;
+}
+
+.reg_labels{
+	float:left;
+}
+
+
+
+
+@media only screen and (min-width: 1020px) {
+	/* For PCs: */
+  
+  
+  .container {
+	  margin-top:13vw;
+	  margin-left:58.33vw;
+	  max-height:160vw;
+	  font-size:2vw;
+	  padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+	  background:white;
+	 // background: rgba(255, 255, 153, 0.6); /* Black background with 0.5 opacity */
+	}
+	
+	/* Full-width input fields */
+	input[type=text], input[type=password],input[type=email] {
+	  width: 15vw;
+	  padding: 1.2vw;
+	  margin: 1vw 1vw 0.5vw ;
+
+	}
+	
+	.reg_btn {
+	  border-width:0.3vw;
+	  padding: 1vw 2vw;
+	  font-size:2.5vw;
+	}
+  
+	.reg_hr{
+	 border-top: 0.15vw solid black;
+	}
+  
+  .browse_btn{
+
+	  //border: solid;
+	  //border-width:0.2vw;
+	  //border-color: #FEDF00;
+	  padding: 0.5vw 1vw;
+	  width: 100%;
+	  font-size:1.6vw;
+	}
+  
+	.submit_btn{
+ 
+	  border-width:0.3vw;
+	  padding: 0.5vw 1vw;
+	  font-size:2vw;
+	}
+	  
+    
+	.form_head{
+		font-size:3.5vw;
+	}
+  
+	img{
+		width: 98vw;
+		height: 150vw;
+		margin-left:0;
+	}
+	
+	
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  font-size:1.5vw;
+	  
+	}
+
+	::-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  font-size:0.5rem;
+	}
+
+	input::-ms-input-placeholder {
+	  font-size: 1.2rem;
+	  transform: scale(1.4,1.4) translateX(+1.4rem);
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1020px){
+	/* For mobile phones: */
+	[class*="col-"] {
+		width: 94vw;
+	}
+  
+    .container {
+	  margin:0vw;
+	  margin-top:53vw;
+	  font-size:4vw;
+	  padding: 0.5vw 1vw 0.5vw 1vw;
+	  background: rgba(255, 255, 255, 0.65); /* Black background with 0.5 opacity */
+	}
+	
+	
+	/* Full-width input fields */
+	input[type=text], input[type=password],input[type=email] {
+	  width: 45vw;
+	  padding: 1.2vw;
+	  margin: 1vw 1vw 0.5vw ;
+
+	}
+	
+	.reg_btn {
+	  border-width:3%;;
+	  padding: 1vw 2vw;
+	  font-size:5vw;
+	}
+	
+    .reg_hr{
+	 border-top: 0.25vw solid black;
+	}
+
+	.browse_btn{
+
+	  //border: solid;
+	  //border-width:0.2vw;
+	  //border-color: #FEDF00;
+	  margin-top:0.5vw;
+	  margin-bottom:0.5vw;
+	  padding: 0;
+	  width: 83%;
+	  font-size:3vw;
+	}
+	
+	.submit_btn{
+	  margin-top:1vw;
+	  border-width:3%;;
+	  padding: 1vw 2vw;
+	  font-size:5vw;
+	}
+	
+  	.form_head{
+		font-size:6vw;
+	}
+  
+	img{
+		width: 150vw;
+		height: 370vw;
+		margin-left:-20vw;
+	}
+	
+	
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  font-size:2.8vw;
+	  
+	}
+
+	::-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  font-size:1rem;
+	}
+
+	input::-ms-input-placeholder {
+	  font-size: 1.6rem;
+	  transform: scale(1.4,1.4) translateX(+1.4rem);
+	}
+
+}

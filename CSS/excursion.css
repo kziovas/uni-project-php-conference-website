@@ -1,0 +1,159 @@
+
+
+#more {display: none;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.slide_container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 5vw;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.slide_row {
+	position: relative;
+}
+
+.slide_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.slide_column {
+  float: left;
+  width: 16.66%;
+  height: 5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height:10%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+@media only screen and (min-width: 1020px) {
+	/* For PCs: */
+	.multmedia{
+
+		width:45vw; 
+		height:17vw; 
+		padding: 0.5vw 2vw 0.5vw 2vw; 
+
+	}
+	
+	.img_gallery {
+		vertical-align: middle;
+		width: 100vw;
+		height: 30vw;
+		margin-left:0;
+	}
+
+}
+
+
+@media only screen and (max-width: 1020px){
+	/* For mobile phones: */
+	
+	.multmedia{
+
+		width:90vw; 
+		height:35vw; 
+		padding: 0.5vw 3vw 0.5vw 3vw; 
+
+	}
+	
+	.slide_row {
+		padding:none;
+		margin:none;
+		padding-left:0;
+		width: 100%;
+		height: 5%;
+		padding-right:0;
+		display: block;
+		left:21.7%;
+	}
+	
+	.slide_column {
+	  padding:none;
+	  margin:none;
+	  width: 16.66%;
+	  height: 5%;
+	}
+	
+	.img_gallery {
+		vertical-align: middle;
+		width: 90vw;
+		height: 50vw;
+		margin-left:0;
+	}
+
+}
