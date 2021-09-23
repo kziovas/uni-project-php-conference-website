@@ -1,0 +1,31 @@
+CREATE TABLE members (
+    memberid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    firstname varchar(50) NOT NULL,
+    lastname varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+	password varchar(50) NOT NULL,
+	institute varchar(50) NOT NULL,
+	payid int,
+	paper varchar(100)
+);
+
+INSERT INTO ssea.members (firstname,lastname,email,password,institute,payid,paper)
+		      values ("Kostas","Ziovas","k_ziovas@yahoo.gr","1234","UniPi",0,'0');
+			  
+
+CREATE TABLE bank (
+    payid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cardname varchar(100) NOT NULL,
+	cardnumber varchar(50) NOT NULL,
+    expiration varchar(50) NOT NULL,
+	cvv int NOT NULL
+);
+
+INSERT INTO ssea.bank (cardname,cardnumber,expiration,cvv)
+		  values ('Kostas Ziovas','122333',STR_TO_DATE('01-03-2035', '%d-%m-%Y'),'123');
+		  
+INSERT INTO ssea.bank (cardname,cardnumber,expiration,cvv)
+		  values ('Anna Kapou','455666',STR_TO_DATE('01-03-2035', '%d-%m-%Y'),'456');
+		  
+INSERT INTO ssea.bank (cardname,cardnumber,expiration,cvv)
+		  values ('Giorgos Nixtas','788999',STR_TO_DATE('01-03-2035', '%d-%m-%Y'),'789');
